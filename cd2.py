@@ -1,7 +1,7 @@
 import unittest
-from gestion_alumnos import buscar_alumno
+from cd3 import buscar_alumno
 
-class TestGestionAlumnos(unittest.TestCase):
+class TestGestionAlumnos(unittest.TestCase):    #funciondetesteo
     def setUp(self):
         self.alumnos = [
             {"nombre": "Ana", "edad": 20, "carrera": "Ingeniería"},
@@ -18,5 +18,5 @@ class TestGestionAlumnos(unittest.TestCase):
         resultado = buscar_alumno(self.alumnos, "Carlos")
         self.assertIsNone(resultado)
 
-if _name_ == '_main_':
-    unittest.main()
+if __name__== '_main_':
+    unittest.main()  
